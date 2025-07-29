@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS vendas (
+  id SERIAL PRIMARY KEY,
+  produto TEXT,
+  valor NUMERIC,
+  data TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS logs (
+  id SERIAL PRIMARY KEY,
+  tipo TEXT,
+  mensagem TEXT,
+  data TIMESTAMP
+);
